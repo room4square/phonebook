@@ -1,0 +1,13 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap kita commend krn kita mo pake bulma
+// @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// di import dari node modules karena kita install bulma via node modules, pathnya bisa kyk dibawah ini aja
+@import "~bulma/bulma";
+
