@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// route dibawah ini suapaya laravel tau route dari vuejs
+Route::get('/phonebook/{name}',function(){
+	return redirect('/');
+})->where('name','[A-Za-z]+');
+
+Route::resource('phonebook','PhonebookController');
+Route::post('getData','PhonebookController@getData');
